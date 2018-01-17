@@ -27,7 +27,7 @@ body, html {
 .navbar{
     /*position: fixed;*/
     /*top: 0;*/
-    background-color: #005A9C;
+    background-color: #0080ff /*#005A9C*/ ;
     color: #FFFFFF;
 }
 
@@ -262,7 +262,7 @@ body, html {
 }
 
 .text-blue,.hover-text-blue:hover{
-    color:#2196F3;
+    color:dodgerblue;
 }
 
 .text-grey,.hover-text-grey:hover,.text-gray,.hover-text-gray:hover{
@@ -270,7 +270,7 @@ body, html {
 }
 
 .blue-background{
-    background-color: #2196F3;
+    background-color: #000F46/*#003366*/;
 }
 
 #homediv{
