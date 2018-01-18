@@ -109,23 +109,21 @@
     <div class="container light-grey" style="padding:128px 0px" id="contact">
         <h3 class="center">CONTACT</h3>
         <p class="center large">Lets get in touch. Send me a message:</p>
-        <div class="row-padding" style="margin-top:64px">
+        <div class="row-padding">
             <div class="center">
                 <p><i class="fa fa-map-marker fa-fw xxlarge margin-right"></i> Waterloo, ON</p>
                 <p><i class="fa fa-phone fa-fw xxlarge margin-right"></i> Phone: +1 (647) 285-3404</p>
                 <p><i class="fa fa-envelope fa-fw xxlarge margin-right"> </i> Email: ethan.chan@uwaterloo.ca</p>
                 <br>
-                <form action="/action_page.php" target="_blank">
-                    <p><input class="w3-border form" type="text" placeholder="Name" required name="Name"></p>
-                    <p><input class="border form" type="text" placeholder="Email" required name="Email"></p>
-                    <p><input class="border form" type="text" placeholder="Subject" required name="Subject"></p>
-                    <p><input class="border form" type="text" placeholder="Message" required name="Message"></p>
-                    <p>
-                        <button class="button black" type="submit">
-                            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-                        </button>
-                    </p>
+                <form>
+                    <p><input class="border form" type="text" placeholder="Name" required name="Name" id="Name"></p>
+                    <p><input class="border form" type="text" placeholder="Email" required name="Email" id="Email"></p>
+                    <p><textarea class="border form message" type="text" placeholder="Message" required name="Message" id="Message" rows="4"></textarea></p>
+
                 </form>
+                <button class="button black sendMail">
+                    <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                </button>
             </div>
 
         </div>
@@ -143,6 +141,16 @@
     </footer>
 
 
+    <script>
+        $(function () {
+            $('.sendMail').click(function (event) {
+                var email = $('#Email').val();
+                var subject = 'Message from: ' + $('#Name').val();
+                var emailBody = $('#Message').val();
+                document.location = "mailto:"+email+"?subject="+subject+"&body="+emailBody;
+            });
+        });
+    </script>
 </body>
 
 </html>
