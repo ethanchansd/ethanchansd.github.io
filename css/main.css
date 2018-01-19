@@ -117,6 +117,13 @@ body, html {
     float:right;
 }
 
+.topbar{
+    position:fixed;
+    width:100%;
+    z-index:1;
+    top:0;
+}
+
 .row-padding:after,.row-padding:before{
     content:"";
     display:table;
@@ -195,6 +202,11 @@ body, html {
 
 .hide-small{
     display:none;
+}
+@media (max-width: 601px) {
+    .hide-small {
+        display:contents;
+    }
 }
 
 .bar:before,.bar:after{
