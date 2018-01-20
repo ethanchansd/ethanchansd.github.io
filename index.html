@@ -79,23 +79,23 @@ me google that for you
         <h3 class="center">PROJECTS</h3>
         <p class="center large">What I've done</p>
 
-        <table style="padding:128px 0px">
+        <table style="padding:128px 0">
             <tbody>
-                <tr style="padding:128px 0px">
-                    <td style="width:15%; padding:0px 48px 0px 128px"><img src="assets/data-structures.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Data Structures Companion"></td>
-                    <td style="width: 1rem;"><h3>Data Structures Companion</h3><p>A native iOS app that helps students learn introductory Data Structures and Algorithms. It provides visualizations and explanations for lessons on their mobile device. This was developed with the support of University of Waterloo Professor: Igor Ivkovic and is developed specifically for a course used across multiple Waterloo Engineering Disciplines.</p></td>
+                <tr style="padding:128px 0">
+                    <td style="padding:0 128px"><img src="assets/data-structures.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Data Structures Companion"></td>
+                    <td style="padding:0 48px 0 0"><h3>Data Structures Companion</h3><p>A native iOS app that helps students learn introductory Data Structures and Algorithms. It provides visualizations and explanations for lessons on their mobile device. This was developed with the support of University of Waterloo Professor: Igor Ivkovic and is developed specifically for a course used across multiple Waterloo Engineering Disciplines.</p></td>
                 </tr>
-                <tr style="padding:128px 0px">
-                    <td style="width:15%; padding:0px 48px"><img src="assets/are-you-a-robot.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Data Structures Companion"></td>
-                    <td style="padding:0px"><h3>NoCaptcha</h3><p>This is a hardware version of ReCaptcha more commonly known as 'Are you a robot'. It checks liveliness through a mathematical operation. An LED matrix and hardware encrypter was built from scratch. This was all controlled with an Arduino Uno with all native functionality re-implemented in an optimal fashion. </p></td>
+                <tr style="padding:128px 0">
+                    <td style="padding:0 128px"><img src="assets/are-you-a-robot.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Data Structures Companion"></td>
+                    <td style="padding:0 48px 0 0"><h3>NoCaptcha</h3><p>This is a hardware version of ReCaptcha more commonly known as 'Are you a robot'. It checks liveliness through a mathematical operation. An LED matrix and hardware encrypter was built from scratch. This was all controlled with an Arduino Uno with all native functionality re-implemented in an optimal fashion. </p></td>
                 </tr>
-                <tr style="padding:128px 0px">
-                    <td style="width:15%; padding:0px 48px"><img src="assets/elevator-control.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Data Structures Companion"></td>
-                    <td style="padding:0px"><h3>Elevator Control</h3><p>An algorithm that determines the routing of an elevator system with an optimal destination time for passengers. Design in collaboration at Waterloo Engineering Competition.</p></td>
+                <tr style="padding:128px 0">
+                    <td style="padding:0 128px"><img src="assets/elevator-control.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Data Structures Companion"></td>
+                    <td style="padding:0 48px 0 0"><h3>Elevator Control</h3><p>An algorithm that determines the routing of an elevator system with an optimal destination time for passengers. Design in collaboration at Waterloo Engineering Competition.</p></td>
                 </tr>
-                <tr style="padding:128px 0px">
-                    <td style="width:15%; padding:0px 48px"><img src="sample.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Data Structures Companion"></td>
-                    <td style="padding:0px"><h3>Puzzle Design</h3><p>Designed in SolidWorks, this 3D printed puzzle was envisioned with a custom track to affix pieces to a center core.</p></td>
+                <tr style="padding:128px 0">
+                    <td style="padding:0 128px"><img src="sample.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Data Structures Companion"></td>
+                    <td style="padding:0 48px 0 0"><h3>Puzzle Design</h3><p>Designed in SolidWorks, this 3D printed puzzle was envisioned with a custom track to affix pieces to a center core.</p></td>
                 </tr>
 
             </tbody>
@@ -124,7 +124,6 @@ me google that for you
                 <br>
                 <form>
                     <p><input class="border form" type="text" placeholder="Name" required name="Name" id="Name"></p>
-                    <p><input class="border form" type="text" placeholder="Email" required name="Email" id="Email"></p>
                     <p><textarea class="border form message" type="text" placeholder="Message" required name="Message" id="Message" rows="4"></textarea></p>
 
                 </form>
@@ -151,10 +150,9 @@ me google that for you
     <script>
         $(function () {
             $('.sendMail').click(function (event) {
-                var email = $('#Email').val();
                 var subject = 'Message from: ' + $('#Name').val();
                 var emailBody = $('#Message').val();
-                document.location = "mailto:"+email+"?subject="+subject+"&body="+emailBody;
+                document.location = "mailto:ethan.chan@uwaterloo.ca"+"?subject="+subject+"&body="+emailBody;
             });
         });
     </script>
