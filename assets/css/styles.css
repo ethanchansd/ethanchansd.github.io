@@ -284,7 +284,8 @@ body, html {
 }
 
 .blue-background{
-    background-color: #000F46/*#003366*/;
+    /*background-color: #000F46!*#003366*!;*/
+    background-image: linear-gradient(to bottom, #143355, #1e4c7c, #2866a6, #3381d2, #3f9dff);
 }
 
 #homediv{
